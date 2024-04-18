@@ -1,11 +1,19 @@
-const Hero = ({ title, subtitle, secondSubTitle, bgColor, textColor }) => {
+const Hero = ({
+  title,
+  subtitle,
+  secondSubTitle,
+  imgSource,
+  bgColor,
+  textColor,
+}) => {
   return (
     <section
       className={bgColor + ` flex justify-center items-center border-b-black`}
     >
       <div className='full-screen-section snap-center flex flex-col items-center'>
         <div className='text-center flex flex-col justify-center items-center gap-4'>
-          <img className='w-6/12' src='charging_station.svg' alt='' />
+          {/* image */}
+          <img className='w-6/12' src={imgSource} alt={title + ` Image`} />
           <h1
             className={
               textColor + ` text-3xl font-bold sm:text-5xl md:text-6xl`

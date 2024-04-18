@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const DropdownMenu = ({ dropdownState }) => {
   return (
     <ul
-      className={`flex flex-col gap-2 ml-5 text-base 
+      className={`flex flex-col gap-2 ml-5 text-2xl
                   ${
                     dropdownState
                       ? 'visible max-h-[500px]'

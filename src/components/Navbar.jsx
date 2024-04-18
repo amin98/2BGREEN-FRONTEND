@@ -64,7 +64,7 @@ const Navbar = () => {
           className={`fixed top-12 overflow-scroll  w-full transition-all -translate-y-100 ease-in-out duration-200 bg-white h-screen
                     ${menuState ? 'translate-y-0' : '-translate-y-full'}`}
         >
-          <div className=' flex flex-col items-start m-5 text-lg'>
+          <div className=' flex flex-col items-start m-5 text-[25px]'>
             <div
               className='relative flex flex-col items-start mt-2 gap-2'
               role='button'
@@ -84,14 +84,14 @@ const Navbar = () => {
                     dropdownState
                       ? 'rotate-90 transition-all ease-in-out duration-200'
                       : 'rotate-0 transition-all ease-in-out duration-200'
-                  } size-[0.6rem]`}
+                  } size-[1rem]`}
                   src='arrow-right.svg'
                   alt='Arrow Right'
                 />
               </div>
 
               <DropdownMenu dropdownState={dropdownState} />
-              <div className='flex flex-col gap-4'>
+              <div className='flex flex-col gap-4 '>
                 <li className='flex justify-between items-center'>
                   <Link className=' lg:hidden' to='/'>
                     Onze Missie
