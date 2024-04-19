@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const handleMenuClick = () => {
     setMenuState(!menuState);
+    console.log();
   };
 
   const handleDropdownClick = () => {
@@ -32,9 +33,9 @@ const Navbar = () => {
               alt='Menu'
             />
           </div>
-          <a href='/'>
+          <Link onClick={handleMenuClick} to='/'>
             <img className='w-40' src='2b_green_logo.svg' alt='Image' />
-          </a>
+          </Link>
           <div className='flex gap-3'>
             {/* <a href=''>
               <img className='w-6' src='search.svg' alt='Search' />
@@ -93,27 +94,35 @@ const Navbar = () => {
               <DropdownMenu dropdownState={dropdownState} />
               <div className='flex flex-col gap-4 '>
                 <li className='flex justify-between items-center'>
-                  <Link className=' lg:hidden' to='/'>
+                  <Link onClick={handleMenuClick} className=' lg:hidden' to='/'>
                     Onze Missie
                   </Link>
                 </li>
                 <li className='flex justify-between items-center'>
-                  <Link className=' lg:hidden' to='/'>
+                  <Link onClick={handleMenuClick} className=' lg:hidden' to='/'>
                     Blog
                   </Link>
                 </li>
                 <li className='flex justify-between items-center'>
-                  <Link className=' lg:hidden' to='/'>
+                  <Link onClick={handleMenuClick} className=' lg:hidden' to='/'>
                     Dashboard
                   </Link>
                 </li>
                 <li className='flex justify-between items-center'>
-                  <Link className=' lg:hidden' to='/'>
+                  <Link
+                    onClick={handleMenuClick}
+                    className=' lg:hidden'
+                    to='/register'
+                  >
                     Registreren
                   </Link>
                 </li>
                 <li className='flex justify-between items-center'>
-                  <Link className=' lg:hidden' to='/'>
+                  <Link
+                    onClick={handleMenuClick}
+                    className=' lg:hidden'
+                    to='/login'
+                  >
                     Login
                   </Link>
                 </li>

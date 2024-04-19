@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
+import Login from './pages/LoginPage';
+import Register from './pages/RegisterPage';
 import './App.css';
 
 import {
@@ -16,6 +18,8 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<MainLayout />}>
         <Route index element={<HomePage />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
 
         {/* <Route path='*' element={<NotFoundPage />} /> */}
       </Route>

@@ -8,8 +8,9 @@ const HomePage = () => {
   return (
     <div className='snap-y snap-mandatory overflow-scroll text-lg'>
       <TopHero
-        title='Go Green!'
-        subtitle="This is a test for 2BGreen don't take this seriously. Stop reading please I already told you it's a test. "
+        title='Go Green! Or go home...'
+        subtitle='Betreed de inspirerende wereld van 2B Green en geef jouw hart een sprongetje van vreugde.
+        '
         secondSubTitle="If you are still reading you get 7 years of bad luck. I'm serious stop reading."
         bgColor={'bg-primary'}
         textColor={'text-white'}
