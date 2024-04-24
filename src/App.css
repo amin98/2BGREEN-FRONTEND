@@ -4,6 +4,31 @@ body {
   margin: 0;
 }
 
-.full-screen-section {
-  height: 100vh;
+nav
+  .md:hidden.absolute.top-full.left-0.w-full.bg-white.shadow-lg.transition-all.max-h-0 {
+  max-height: 0;
+  overflow: hidden;
+}
+
+nav .md:hidden.absolute.top-full.left-0.w-full.bg-white.shadow-lg.transition-all { /* No max-height initially */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+.transition-all {
+  transition: max-height 0.3s ease-in-out;
+}
+
+.max-h-0 {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out; /* Adjust timing as needed */
+}
+
+/* Slide-out to the left */
+.slide-out-left {
+  transform: translateX(-100%);
 }

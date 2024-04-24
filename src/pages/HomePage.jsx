@@ -1,5 +1,5 @@
-import Hero from '../components/Hero';
-import TopHero from '../components/TopHero';
+import Hero from './../components/Hero';
+import TopHero from './../components/TopHero';
 import ladenImage from '../images/charging_station.svg';
 import houseImage from '../images/house.webp';
 import ambassadorImage from '../images/ambassador.webp';
@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div className='snap-y snap-mandatory overflow-scroll text-lg'>
       <TopHero
-        title='Go Green! Or go home...'
+        title='Go Green!'
         subtitle='Betreed de inspirerende wereld van 2B Green en geef jouw hart een sprongetje van vreugde.
         '
         secondSubTitle="If you are still reading you get 7 years of bad luck. I'm serious stop reading."
