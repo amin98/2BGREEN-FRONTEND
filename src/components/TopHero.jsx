@@ -4,9 +4,10 @@ const TopHero = ({ title, subtitle, secondSubTitle, bgColor, textColor }) => {
       <section
         className={
           bgColor +
-          ` flex  snap-start h-screen justify-center items-center full-screen-section bg-[url('./images/hero/forest.jpg')]  `
+          ` flex relative snap-start h-screen justify-center items-center full-screen-section   `
         }
       >
+        <img src='./images/' className='absolute opacity-50' />
         <div className='mx-4 flex flex-col items-center'>
           <div
             className=' text-center flex flex-col justify-evenly items-center gap-3

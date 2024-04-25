@@ -9,13 +9,12 @@ const HomePage = () => {
     <div className='snap-y snap-mandatory overflow-scroll text-lg'>
       <TopHero
         title='Go Green!'
-        subtitle='Betreed de inspirerende wereld van 2B Green en geef jouw hart een sprongetje van vreugde.
+        subtitle='Betreed de inspirerende wereld van 2B Green en geef jouw hart een sprongetje van vreugde. Wij geloven in de kracht van duurzame alternatieven en samen streven we naar een groenere wereld.
         '
-        secondSubTitle="If you are still reading you get 7 years of bad luck. I'm serious stop reading."
         bgColor={'bg-primary'}
         textColor={'text-white'}
       />
-      <Hero
+      {/* <Hero
         title='Laden'
         subtitle="This is a test for 2BGreen don't take this seriously. Stop reading please I already told you it's a test. "
         secondSubTitle="If you are still reading you get 7 years of bad luck. I'm serious stop reading."
@@ -40,7 +39,7 @@ const HomePage = () => {
         bgColor={'bg-hero'}
         textColor={'text-primary'}
         imgSource={ambassadorImage}
-      />
+      /> */}
     </div>
   );
 };
