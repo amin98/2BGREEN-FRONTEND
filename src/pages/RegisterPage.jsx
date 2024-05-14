@@ -1,24 +1,26 @@
+import { Link } from 'react-router-dom';
+
 const RegisterPage = () => {
   return (
-    <div className='h-screen flex items-center justify-center bg-gray-100'>
-      <div className='bg-white p-8 rounded-lg shadow-sm '>
+    <div className='h-screen flex items-center justify-center bg-gray-100 '>
+      <div className='bg-white w-full md:w-3/5 lg:w-2/5 p-8 rounded-lg shadow-sm m-5'>
         {/* Form Header */}
         <h2 className='text-2xl font-medium mb-6 text-center'>Register</h2>
 
         {/* Form Fields */}
-        <div className='mb-4 flex gap-5'>
-          <div>
-            <label htmlFor='firstname' className='block text-gray-700 mb-2 '>
-              Firstname:
+        <div className='mb-4 flex gap-5 last:'>
+          <div className='w-full'>
+            <label htmlFor='name' className='block text-gray-700 mb-2 '>
+              Name:
             </label>
             <input
               autoComplete='off'
               type='text'
-              id='firstname'
+              id='name'
               className='w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary'
             />
           </div>
-          <div>
+          {/* <div className='w-full'>
             <label htmlFor='lastname' className='block text-gray-700 mb-2 '>
               Lastname:
             </label>
@@ -28,10 +30,9 @@ const RegisterPage = () => {
               id='lastname'
               className='w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary'
             />
-          </div>
+          </div> */}
         </div>
         <div className='mb-6'>
-          {' '}
           {/* Adjust margin as needed */}
           <label htmlFor='email' className='block text-gray-700 mb-2 '>
             Email:
@@ -63,14 +64,11 @@ const RegisterPage = () => {
         </button>
 
         <div className='mt-4 text-center'>
-          <a href='#' className='text-primary hover:text-lime-green'>
-            Forgot password?
-          </a>
-          <p className='mt-2'>
-            No account yet?{' '}
-            <a href='#' className='text-primary hover:text-lime-green'>
-              Registreren
-            </a>
+          <p className='flex justify-center gap-2 mt-2'>
+            Already have an account?
+            <Link to='/login' className='text-primary hover:text-lime-green'>
+              Sign in
+            </Link>
           </p>
         </div>
       </div>

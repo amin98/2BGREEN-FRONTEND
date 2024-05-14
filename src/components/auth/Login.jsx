@@ -51,11 +51,10 @@ function Login({ onLogin }) {
             Wachtwoord vergeten?
           </a>
           <p className='mt-2'>
-            Nog geen account?{' '}
+            Nog geen account?
             <Link to='/register' className='text-primary hover:text-lime-green'>
-              {' '}
               Register here
-            </Link>{' '}
+            </Link>
           </p>
         </div>
       </div>

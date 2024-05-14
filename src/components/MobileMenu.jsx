@@ -5,7 +5,6 @@ const NavLinksComponent = ({ setIsOpen }) => {
   const navItems = [
     { to: '/', label: 'Home' },
     { to: '/products', label: 'Products' },
-
     { to: '/login', label: 'Login' },
     { to: '/register', label: 'Register' },
   ];

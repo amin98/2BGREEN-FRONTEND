@@ -26,6 +26,9 @@ export default {
       ringColor: {
         primary: '#8EBF46',
       },
+      height:{
+        'screen-90': '90vh',
+      }
     },
   },
   plugins: [],

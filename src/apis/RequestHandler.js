@@ -1,57 +1,62 @@
-import connection from "./connection/Connector";
-import RequestType from "../utils/RequestType";
+import connection from './connection/Connector';
+import RequestType from '../utils/RequestType';
 
-const get = async(url, config) => {
-    return await handleRequest(RequestType.Get, url, null, config);
-}
+const get = async (url, config) => {
+  return await handleRequest(RequestType.Get, url, null, config);
+};
 
-const post = async(url, data, config) => {
-    return await handleRequest(RequestType.Post, url, data, config);
-}
+const post = async (url, data, config) => {
+  // Create a default configuration if none is provided
+  config = config || {};
+  config.headers = config.headers || {}; // Initialize headers if they don't exist
 
-const put = async(url, data, config) => {
-    return await handleRequest(RequestType.Put, url, data, config);
-}
+  config.headers['Content-Type'] = 'application/json'; // Set the header
 
-const del = async(url, config) => {
-    return await handleRequest(RequestType.Delete, url, null, config);
-}
+  return await handleRequest(RequestType.Post, url, data, config);
+};
 
-async function handleRequest(request, url, data, config){
-    let result = {}; 
-    try{
-        switch(request){
-            case RequestType.Get:
-                result = await connection.get(url, config);
-                break;
+const put = async (url, data, config) => {
+  return await handleRequest(RequestType.Put, url, data, config);
+};
 
-            case RequestType.Post:
-                result = await connection.post(url, data, config);
-                break;
+const del = async (url, config) => {
+  return await handleRequest(RequestType.Delete, url, null, config);
+};
 
-            case RequestType.Put:
-                result = await connection.put(url, data, config);
-                break;
+async function handleRequest(request, url, data, config) {
+  let result = {};
+  try {
+    switch (request) {
+      case RequestType.Get:
+        result = await connection.get(url, config);
+        break;
 
-            case RequestType.Delete:
-                result = await connection.delete(url, config);
-                break;
+      case RequestType.Post:
+        result = await connection.post(url, data, config);
+        break;
 
-            default:
-                throw new Error('HTTP Request not defined!');
-        }
+      case RequestType.Put:
+        result = await connection.put(url, data, config);
+        break;
+
+      case RequestType.Delete:
+        result = await connection.delete(url, config);
+        break;
+
+      default:
+        throw new Error('HTTP Request not defined!');
     }
-    catch(error){
-        return error.response;
-    }
-    return result;
+  } catch (error) {
+    return error.response;
+  }
+  return result;
 }
 
 const RequestHandler = {
-    get,
-    post,
-    put,
-    del
-}
+  get,
+  post,
+  put,
+  del,
+};
 
 export default RequestHandler;

@@ -1,18 +1,10 @@
-const Hero = ({
-  title,
-  subtitle,
-  secondSubTitle,
-  imgSource,
-  bgColor,
-  textColor,
-}) => {
+import { motion, useTransform, useTranform } from 'framer-motion';
+
+const Hero = ({ title, subtitle, secondSubTitle, imgSource, textColor }) => {
   return (
-    <section
-      className={bgColor + ` flex justify-center items-center border-b-black`}
-    >
+    <section className={` flex justify-center items-center h-screen`}>
       <div className='full-screen-section snap-center flex flex-col items-center'>
         <div className='text-center flex flex-col justify-center items-center gap-4'>
-          {/* image */}
           <img className='w-6/12' src={imgSource} alt={title + ` Image`} />
           <h1
             className={
@@ -22,7 +14,6 @@ const Hero = ({
             {title}
           </h1>
           <p className={textColor + ` my-4 text-xl`}>{subtitle}</p>
-          <p className={textColor + ` my-4 text-xl`}>{secondSubTitle}</p>
 
           <a
             className='bg-green-800 text-white p-2 rounded-3xl text-center w-40 hover:bg-green-600'

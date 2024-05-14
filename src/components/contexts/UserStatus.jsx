@@ -3,6 +3,8 @@ import { useEffect, useReducer, createContext } from 'react';
 const initialState = {
   isAuthenticated: false,
   token: JSON.parse(localStorage.getItem('token')),
+  name: null, // Add name
+  error: null,
 };
 
 const userReducer = (state, action) => {
@@ -10,16 +12,27 @@ const userReducer = (state, action) => {
     case 'login':
       return {
         ...state,
+        isAuthenticated: true,
         token: action.token,
+        name: action.name,
+        error: null, // Clear any old errors
       };
     case 'logout':
       return {
         ...state,
+        isAuthenticated: false,
         token: null,
+        name: null,
       };
+    case 'error':
+      return {
+        ...state,
+        error: action.error,
+      };
+    default:
+      return state;
   }
 };
-
 export const userStatusContext = createContext();
 
 const UserStatusContextProvider = ({ children }) => {
