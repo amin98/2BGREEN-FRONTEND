@@ -4,16 +4,10 @@ import HomePage from './pages/HomePage';
 import Register from './pages/RegisterPage';
 import ProductPage from './pages/ProductPage';
 import LoginPage from './pages/LoginPage';
+import ComparisonPage from './pages/ComparisonPage';
 import './App.css';
 
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-  BrowserRouter,
-  Routes,
-} from 'react-router-dom';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 import UserStatusContextProvider from './components/contexts/UserStatus';
 
@@ -27,6 +21,7 @@ function App() {
               <Route index element={<HomePage />} />
               <Route path='/login' element={<LoginPage />} />
               <Route path='/register' element={<Register />} />
+              <Route path='/comparison' element={<ComparisonPage />} />
               <Route path='/products' element={<ProductPage />} />
             </Route>
           </Routes>

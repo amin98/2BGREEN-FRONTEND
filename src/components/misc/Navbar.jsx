@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className='fixed z-50 top-0 w-full bg-white shadow'>
-      <div className='max-w-7xl mx-auto px-2 sm:px-4 lg:px-8'>
+      <div className='justify-between px-2 sm:px-4 lg:px-8'>
         <div className='relative flex items-center justify-between h-16'>
           <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
             <button

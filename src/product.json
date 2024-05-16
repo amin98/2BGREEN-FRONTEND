@@ -1,8 +1,90 @@
-{
-  "id": 1,
-  "title": "Sedum Lichtgewicht Mix Matten",
-  "description": " Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-  "price": 79.95,
-  "category": "Groendaken",
-  "image": "./images/greenroof.png"
-}
+[
+  {
+    "id": 1,
+    "title": "Sedum Lichtgewicht Mix Matten",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 79.95,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof1.png"
+  },
+  {
+    "id": 2,
+    "title": "GroenGloed Dakgras",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 59.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof2.png"
+  },
+  {
+    "id": 3,
+    "title": "Ecovriendelijke GroenTapijten",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 49.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof8.png"
+  },
+  {
+    "id": 4,
+    "title": "BioFlora Dakbedekkers",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 69.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof4.png"
+  },
+  {
+    "id": 5,
+    "title": "GroenDek Oasis Matten",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 39.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof5.png"
+  },
+  {
+    "id": 6,
+    "title": "NatuurZicht GroenDak Folie",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 79.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof1.png"
+  },
+  {
+    "id": 7,
+    "title": "Levendige GroenRijk Tiles",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 89.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof7.png"
+  },
+  {
+    "id": 8,
+    "title": "EverGroen Dakbedekking",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 59.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof8.png"
+  },
+  {
+    "id": 9,
+    "title": "GroenLeven Sedum Panelen",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 69.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof2.png"
+  },
+  {
+    "id": 10,
+    "title": "EcoDak Botanische Laag",
+    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 49.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof4.png"
+  },
+  {
+    "id": 11,
+    "title": "VivaGroen Groendak Systemen",
+    "description": "Verander uw dak in een levendige oase uw dak in een levendige oase uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
+    "price": 79.99,
+    "category": "Groendaken",
+    "image": "./images/greenroofs/greenroof1.png"
+  }
+]
