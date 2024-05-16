@@ -13,7 +13,7 @@ export default {
       },
       backgroundColor: {
         primary: '#405631',
-        secondary: '#efefee',
+        secondary: '#D2D94F',
         'light-green': '#6a944d',
         'lime-green': '#8EBF46',
         green: '#597d41',
@@ -28,6 +28,14 @@ export default {
       },
       height: {
         'screen-90': '90vh',
+      },
+      borderColor: {
+        primary: '#405631',
+        secondary: '#D2D94F',
+      },
+      colors: {
+        primary: '#405631',
+        secondary: '#D2D94F', // Replace with your secondary color
       },
     },
   },

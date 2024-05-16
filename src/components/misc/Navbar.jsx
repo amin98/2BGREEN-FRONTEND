@@ -51,7 +51,6 @@ const Navbar = () => {
               {navItems.map(item => (
                 <NavLink
                   key={item.href}
-                  onClick={() => setIsOpen(!isOpen)}
                   to={item.href}
                   className='group transition duration-300 text-primary hover:text-lime-green block px-3 py-2 rounded-md text-base font-medium'
                 >

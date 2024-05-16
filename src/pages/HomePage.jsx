@@ -1,5 +1,5 @@
-import Hero from './../components/Hero';
-import TopHero from './../components/TopHero';
+import Hero from '../components/misc/Hero';
+import TopHero from '../components/misc/TopHero';
 import ladenImage from '../images/charging_station.svg';
 import houseImage from '../images/house.webp';
 import ambassadorImage from '../images/ambassador.webp';
