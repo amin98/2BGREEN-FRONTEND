@@ -12,7 +12,7 @@ function Login({ onLogin }) {
 
   return (
     <div className='h-screen flex items-center justify-center bg-gray-100 '>
-      <div className='bg-white p-8 rounded-lg shadow-sm w-5/6 md:w-6/12 lg:w-5/12'>
+      <div className='bg-white p-8 rounded-md shadow-sm w-5/6 md:w-6/12 lg:w-5/12'>
         <h2 className='text-2xl font-medium mb-6 text-center'>Inloggen</h2>
 
         <div className='mb-4'>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import ProductItem from '../components/products/ProductItem';
-const ComparisonPage = props => {
+
+const ComparisonPage = () => {
   const [selectedItems, setSelectedItems] = useState([]);
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const ComparisonPage = props => {
         Vergelijken
       </h1>
       <div className='flex flex-wrap justify-center md:justify-start w-full h-full'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 mx-5'>
+        <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-5 mx-5'>
           {selectedItems.map(product => (
             <ProductItem
               key={product.id}

@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 const RegisterPage = () => {
   return (
     <div className='h-screen flex items-center justify-center bg-gray-100 '>
-      <div className='bg-white w-full md:w-3/5 lg:w-2/5 p-8 rounded-lg shadow-sm m-5'>
-        {/* Form Header */}
+      <div className='bg-white w-full md:w-3/5 lg:w-2/5 p-8 rounded-md shadow-sm m-5'>
         <h2 className='text-2xl font-medium mb-6 text-center'>Register</h2>
 
-        {/* Form Fields */}
         <div className='mb-4 flex gap-5 last:'>
           <div className='w-full'>
             <label htmlFor='name' className='block text-gray-700 mb-2 '>
@@ -22,7 +20,6 @@ const RegisterPage = () => {
           </div>
         </div>
         <div className='mb-6'>
-          {/* Adjust margin as needed */}
           <label htmlFor='email' className='block text-gray-700 mb-2 '>
             Email:
           </label>
@@ -33,7 +30,6 @@ const RegisterPage = () => {
           />
         </div>
         <div className='mb-6'>
-          {/* Adjust margin as needed */}
           <label htmlFor='password' className='block text-gray-700 mb-2 '>
             Password:
           </label>
