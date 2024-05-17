@@ -20,17 +20,6 @@ const RegisterPage = () => {
               className='w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary'
             />
           </div>
-          {/* <div className='w-full'>
-            <label htmlFor='lastname' className='block text-gray-700 mb-2 '>
-              Lastname:
-            </label>
-            <input
-              autoComplete='off'
-              type='text'
-              id='lastname'
-              className='w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary'
-            />
-          </div> */}
         </div>
         <div className='mb-6'>
           {/* Adjust margin as needed */}
@@ -44,7 +33,6 @@ const RegisterPage = () => {
           />
         </div>
         <div className='mb-6'>
-          {' '}
           {/* Adjust margin as needed */}
           <label htmlFor='password' className='block text-gray-700 mb-2 '>
             Password:

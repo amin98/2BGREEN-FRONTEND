@@ -15,15 +15,15 @@ const LoginPage = () => {
     try {
       const response = await AuthenticationAPI.login(email, password);
       if (response.status === 200) {
-        const loginData = response.data; // Assuming it contains the tokens
+        const loginData = response.data;
         dispatch({
           type: 'login',
           token: loginData.access_token,
-          name: loginData.name, // Assuming the response has this structure
+          name: loginData.name,
         });
         localStorage.setItem('accessToken', loginData.access_token);
         localStorage.setItem('refreshToken', loginData.refresh_token);
-        navigate('/', { state: { name: loginData.name } }); // Assuming you want to pass the name
+        navigate('/', { state: { name: loginData.name } });
       } else {
         alert('Incorrect credentials!');
       }

@@ -1,44 +1,40 @@
 import { useState, useEffect } from 'react';
 import productData from '../product.json'; // Adjust the path according to your project structure
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import ProductItem from '../components/products/ProductItem';
 import FilterCheckbox from '../components/misc/FilterCheckbox';
-
+import LoadingAnimation from '../components/misc/LoadingAnimation';
 const ProductPage = () => {
   const [products, setProducts] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
-
-  const [width, setWidth] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Simulate a fetch with a delay
     setTimeout(() => {
       setProducts(productData);
     }, 1000);
   }, []);
 
-  useEffect(() => {
-    console.log(selectedItems);
-  }, [selectedItems]);
-
   const handleCheck = (product, isChecked) => {
+    let newSelectedItems;
     if (isChecked) {
-      setSelectedItems([...selectedItems, product]);
+      newSelectedItems = [...selectedItems, product];
     } else {
-      setSelectedItems(selectedItems.filter(item => item.id !== product.id));
+      newSelectedItems = selectedItems.filter(item => item.id !== product.id);
     }
+    setSelectedItems(newSelectedItems);
+    sessionStorage.setItem('selectedItems', JSON.stringify(newSelectedItems));
   };
-
   if (!products.length) {
-    return <div>Loading...</div>;
+    return <LoadingAnimation />;
   }
 
   return (
     <>
       {selectedItems.length > 0 && (
         <button
-          className={`fixed left-60 bg-primary p-3 text-lg border-b-2 border-l-2 border-r-2 z-10 border-secondary rounded-b-xl text-white ${
+          onClick={() => navigate('/comparison')}
+          className={`fixed right-10 bg-primary p-3 text-lg border-b-2 border-l-2 border-r-2 z-10 border-secondary rounded-b-xl text-white ${
             selectedItems.length > 0 ? 'pop' : ''
           }`}
         >
@@ -63,12 +59,12 @@ const ProductPage = () => {
                 <FilterCheckbox label={'Zonnepanelen'} />
               </li>
               <li>
-                <FilterCheckbox label={'Green Roof'} />
+                <FilterCheckbox label={'Laden'} />
               </li>
             </ul>
           </div>
-          <div className='flex flex-wrap justify-start w-full h-full'>
-            <div className='flex justify-center sm:justify-start  flex-wrap w-full'>
+          <div className='flex flex-wrap justify-center md:justify-start w-full h-full'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 mx-5'>
               {products.map(product => (
                 <ProductItem
                   key={product.id}
