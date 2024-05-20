@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useState, useRef, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import MobileMenu from './MobileMenu';
-const Navbar = () => {
+
+const Navbar = ({ onHeightChange }) => {
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    if (navRef.current) {
+      onHeightChange(navRef.current.offsetHeight);
+    }
+  }, [onHeightChange]);
+
   const [isOpen, setIsOpen] = useState(false);
   const navItems = [
     { href: '/', label: 'Home' },
@@ -13,10 +21,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='fixed z-50 top-0 w-full bg-white shadow'>
+    <nav ref={navRef} className='fixed z-50 top-0 w-full bg-white shadow'>
       <div className='justify-between px-2 sm:px-4 lg:px-8'>
         <div className='relative flex items-center justify-between h-16'>
-          <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
+          <div className='absolute bg-white inset-y-0 left-0 flex items-center sm:hidden'>
             <button
               type='button'
               className='inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-green focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'

@@ -1,7 +1,14 @@
 import { useSwiper, SwiperSlide } from 'swiper/react';
 import { ArrowDownCircleIcon } from '@heroicons/react/24/outline';
 
-const TopHero = ({ title, subtitle, secondSubTitle, bgColor, textColor }) => {
+const TopHero = ({
+  navbarHeight,
+  title,
+  subtitle,
+  secondSubTitle,
+  bgColor,
+  textColor,
+}) => {
   const swiper = useSwiper(); // Get access to the Swiper instance
 
   const handleScrollDown = () => {
@@ -9,9 +16,7 @@ const TopHero = ({ title, subtitle, secondSubTitle, bgColor, textColor }) => {
   };
   return (
     <>
-      <div
-        className={`snap-start snap-always h-screen bg-primary flex relative justify-center items-center`}
-      >
+      <div className={`mx-4 z-10 flex flex-col items-center`}>
         <div className='mx-4 z-10 flex flex-col items-center'>
           <div
             className=' text-center flex flex-col justify-evenly items-center gap-3

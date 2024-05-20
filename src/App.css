@@ -58,3 +58,31 @@ nav
 .pop {
   animation: pop 0.5s ease-in-out;
 }
+/* Ensure the iframe covers the entire background */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.absolute {
+  background: #eee;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+.vimeo-video {
+  box-sizing: border-box;
+  height: 56.25vw; /* 9 / 16 * 100 = 56.25 */
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  width: 177.78vh; /* 16 / 9 * 100 = 177.78 */
+}
+
