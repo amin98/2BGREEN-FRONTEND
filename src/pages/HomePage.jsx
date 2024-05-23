@@ -28,16 +28,12 @@ const HomePage = () => {
   return (
     <>
       {/* Mobile View */}
-      <div
-        className='block lg:hidden relative'
-        style={{ marginTop: `${navbarHeight}px` }}
-      >
+      <div className='relative block lg:hidden'>
         <Swiper
           onSwiper={swiper => (swiperRef.current = swiper)}
           direction='vertical'
           slidesPerView={1}
           className='h-[calc(100svh-var(--navbar-height))]'
-          style={{ height: `calc(100svh - ${navbarHeight}px)` }}
           mousewheel={{ forceToAxis: true }}
         >
           <SwiperSlide>
@@ -58,6 +54,7 @@ const HomePage = () => {
       {/* Desktop View */}
       <div className='hidden lg:block'>
         <DesktopSections />
+        <div></div>
       </div>
     </>
   );

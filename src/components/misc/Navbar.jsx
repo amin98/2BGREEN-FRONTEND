@@ -21,37 +21,37 @@ const Navbar = ({ onHeightChange }) => {
   ];
 
   return (
-    <nav ref={navRef} className='fixed z-50 top-0 w-full bg-white shadow'>
+    <nav ref={navRef} className='fixed top-0 z-50 w-full bg-white shadow'>
       <div className='justify-between px-2 sm:px-4 lg:px-8'>
         <div className='relative flex items-center justify-between h-16'>
-          <div className='absolute bg-white inset-y-0 left-0 flex items-center sm:hidden'>
+          <div className='absolute inset-y-0 left-0 flex items-center bg-white sm:hidden'>
             <button
               type='button'
-              className='inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-green focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
+              className='inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-green focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
               aria-controls='mobile-menu'
               aria-expanded='false'
               onClick={() => setIsOpen(!isOpen)}
             >
               <span className='sr-only'>Open main menu</span>
               {isOpen ? (
-                <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
+                <XMarkIcon className='block w-6 h-6' aria-hidden='true' />
               ) : (
-                <Bars3Icon className='block h-6 w-6' aria-hidden='true' />
+                <Bars3Icon className='block w-6 h-6' aria-hidden='true' />
               )}
             </button>
           </div>
-          <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
-            <div className='flex-shrink-0 flex items-center'>
+          <div className='flex items-center justify-center flex-1 sm:items-stretch sm:justify-start'>
+            <div className='flex items-center flex-shrink-0'>
               <NavLink to='/'>
                 <img
-                  className='block lg:hidden h-8 w-auto'
+                  className='block w-auto h-8 lg:hidden'
                   src='2b_green_logo.svg'
                   alt='2B Green'
                 />
               </NavLink>
               <NavLink to='/'>
                 <img
-                  className='hidden lg:block h-8 w-auto'
+                  className='hidden w-auto h-8 lg:block'
                   src='2b_green_logo.svg'
                   alt='2B Green'
                 />
@@ -64,7 +64,7 @@ const Navbar = ({ onHeightChange }) => {
                 <NavLink
                   key={item.href}
                   to={item.href}
-                  className='group transition duration-300 text-primary hover:text-lime-green block px-3 py-2 rounded-md text-base font-medium'
+                  className='block px-3 py-2 text-base font-medium transition duration-300 rounded-md group text-primary hover:text-lime-green'
                 >
                   {item.label}
                   <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-lime-green'></span>
@@ -88,7 +88,7 @@ const Navbar = ({ onHeightChange }) => {
                 key={item.href}
                 onClick={() => setIsOpen(!isOpen)}
                 to={item.href}
-                className='group transition duration-300 text-primary hover:text-lime-green block px-3 py-2 rounded-md text-base font-medium'
+                className='block px-3 py-2 text-base font-medium transition duration-300 rounded-md group text-primary hover:text-lime-green'
               >
                 {item.label}
                 <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-lime-green'></span>

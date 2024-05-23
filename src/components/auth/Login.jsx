@@ -11,12 +11,11 @@ function Login({ onLogin }) {
   };
 
   return (
-    <div className='h-screen flex items-center justify-center bg-gray-100 '>
-      <div className='bg-white p-8 rounded-md shadow-sm w-5/6 md:w-6/12 lg:w-5/12'>
-        <h2 className='text-2xl font-medium mb-6 text-center'>Inloggen</h2>
-
+    <div className='flex items-center justify-center w-full h-screen bg-gray-100 '>
+      <div className='w-5/12 p-8 bg-white rounded-md shadow-sm '>
+        <h2 className='mb-6 text-2xl font-medium text-center'>Inloggen</h2>
         <div className='mb-4'>
-          <label htmlFor='email' className='block text-gray-700 mb-2 '>
+          <label htmlFor='email' className='block mb-2 text-gray-700 '>
             Email:
           </label>
           <input
@@ -27,8 +26,7 @@ function Login({ onLogin }) {
           />
         </div>
         <div className='mb-6'>
-          {' '}
-          <label htmlFor='password' className='block text-gray-700 mb-2 '>
+          <label htmlFor='password' className='block mb-2 text-gray-700 '>
             Password:
           </label>
           <input
@@ -40,7 +38,7 @@ function Login({ onLogin }) {
         </div>
         <button
           type='submit'
-          className='bg-light-green hover:bg-green text-white font-medium py-2 px-4 rounded-md w-full'
+          className='w-full px-4 py-2 font-medium text-white rounded-md bg-light-green hover:bg-green'
           onClick={handleLogin}
         >
           Login
@@ -52,7 +50,10 @@ function Login({ onLogin }) {
           </a>
           <p className='mt-2'>
             Nog geen account?
-            <Link to='/register' className='text-primary hover:text-lime-green'>
+            <Link
+              to='/register'
+              className='ml-1 text-primary hover:text-lime-green'
+            >
               Register here
             </Link>
           </p>

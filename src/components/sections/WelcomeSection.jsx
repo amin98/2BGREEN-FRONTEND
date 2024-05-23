@@ -1,28 +1,39 @@
 import { ArrowDownCircleIcon } from '@heroicons/react/24/outline';
-import SectionLayout from '../../layouts/SectionLayout';
+import SectionLayout from '../../layouts/SectionLayout'; // Updated import path for SectionLayout
 
 const WelcomeSection = ({ handleScrollDown }) => (
-  <div className='snap-start snap-always h-[calc(100svh-var(--navbar-height))] bg-primary flex relative justify-center items-center'>
-    <SectionLayout className='mx-4 z-10 w-full'>
-      <div className='hidden lg:flex flex-row justify-between items-center w-full'>
-        <div className='text-pretty lg:w-1/2'>
-          <h1 className='text-white font-bold text-4xl sm:text-5xl md:text-6xl mb-4'>
+  <div className='relative flex justify-center items-center h-[calc(100vh-var(--navbar-height))]'>
+    {/* Background Image with Blur */}
+    <div className='absolute inset-0 overflow-hidden'>
+      <div
+        className='absolute inset-0 bg-cover bg-center blur-[1px] scale-110'
+        style={{ backgroundImage: 'url(forest-background.jpg)' }}
+      ></div>
+      <div className='absolute inset-0 bg-primary opacity-40'></div>
+    </div>
+
+    <SectionLayout className='z-10 w-full mx-4'>
+      {/* Desktop View */}
+      <div className='flex-row items-center justify-between hidden w-full lg:flex'>
+        {/* Left Column: Main Heading and Description */}
+        <div className='flex flex-col items-start text-pretty lg:w-1/2'>
+          <h1 className='mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl'>
             Go Green!
           </h1>
-          <p className='text-white my-4 text-xl max-w-lg'>
+          <p className='max-w-lg my-4 text-base text-white text-start sm:text-lg lg:text-xl'>
             Betreed de inspirerende wereld van 2B Green en geef jouw hart een
             sprongetje van vreugde. Wij geloven in de kracht van duurzame
             alternatieven en samen streven we naar een groenere wereld.
           </p>
-          <div className='flex flex-col sm:flex-row justify-start gap-4 mt-4'>
+          <div className='flex flex-col justify-start gap-4 mt-4 sm:flex-row'>
             <a
-              className='bg-white w-full sm:w-auto px-6 py-2 font-bold rounded-2xl text-primary hover:bg-primary hover:text-secondary transition duration-300'
+              className='w-full px-4 py-2 font-bold transition duration-300 bg-white sm:w-auto rounded-2xl text-primary hover:bg-primary hover:text-secondary'
               href='#'
             >
               Meer weten?
             </a>
             <a
-              className='bg-secondary w-full sm:w-auto px-6 py-2 font-bold rounded-2xl text-primary hover:bg-primary hover:text-secondary transition duration-300'
+              className='w-full px-4 py-2 font-bold transition duration-300 bg-secondary sm:w-auto rounded-2xl text-primary hover:bg-primary hover:text-secondary'
               href='#shop'
             >
               Producten
@@ -31,28 +42,16 @@ const WelcomeSection = ({ handleScrollDown }) => (
         </div>
 
         {/* Right Column: Subscription Form */}
-        <div className='lg:w-1/2 bg-white p-6 rounded-lg shadow-lg'>
-          <h2 className='text-2xl font-bold mb-2'>
+        <div className='p-6 bg-white bg-opacity-75 rounded-lg lg:w-1/3'>
+          <h2 className='mb-2 text-xl font-bold lg:text-2xl text-primary'>
             Betreed de groene revolutie!
           </h2>
-          <p className='mb-4'>
-            Beste bezoeker,
-            <br />
-            Schrijf je nu in voor onze nieuwsbrief op 2B-Green.nl! Blijf op de
-            hoogte van onze nieuwste producten, aanbiedingen en belangrijke
-            updates.
+          <p className='mb-4 text-base text-primary sm:text-lg lg:text-xl'>
+            Schrijf je in voor de 2B-Green nieuwsbrief! Mis geen aanbiedingen,
+            nieuwe producten en tips voor een groenere levensstijl. Meld je aan
+            en profiteer!
           </p>
-          <ul className='list-disc list-inside mb-4'>
-            <li>Korting op geselecteerde producten</li>
-            <li>Exclusieve aanbiedingen en promoties</li>
-            <li>Gratis advies en tips voor een groenere levensstijl</li>
-            <li>Updates over nieuwe productlanceringen en innovaties</li>
-          </ul>
-          <p className='mb-4'>
-            We behandelen je e-mailadres met zorg en sturen alleen relevante
-            informatie. Vul je e-mailadres in en klik op "Inschrijven" om
-            betrokken te blijven bij de groene revolutie!
-          </p>
+
           <form
             className='ml-block-form'
             action='https://assets.mailerlite.com/jsonp/439870/forms/88227841028654778/subscribe'
@@ -61,25 +60,16 @@ const WelcomeSection = ({ handleScrollDown }) => (
           >
             <div className='mb-4'>
               <input
-                type='text'
-                name='fields[name]'
-                placeholder='Naam'
-                className='w-full px-4 py-2 border border-gray-300 rounded-lg'
-                required
-              />
-            </div>
-            <div className='mb-4'>
-              <input
                 type='email'
                 name='fields[email]'
                 placeholder='Email'
-                className='w-full px-4 py-2 border border-gray-300 rounded-lg'
+                className='w-full px-3 py-2 border border-gray-300 rounded-lg'
                 required
               />
             </div>
             <button
               type='submit'
-              className='w-full bg-primary text-white px-4 py-2 font-bold rounded-lg hover:bg-secondary transition duration-300'
+              className='w-full px-4 py-2 font-bold text-white transition duration-300 rounded-lg bg-primary hover:bg-secondary hover:text-primary'
             >
               Meld je aan!
             </button>
@@ -87,25 +77,26 @@ const WelcomeSection = ({ handleScrollDown }) => (
         </div>
       </div>
 
-      <div className='flex lg:hidden flex-col items-center'>
-        <div className='text-pretty text-center'>
-          <h1 className='text-white font-bold text-4xl sm:text-5xl md:text-6xl mb-4'>
+      {/* Mobile and Medium View */}
+      <div className='flex flex-col items-center lg:hidden'>
+        <div className='text-center text-pretty'>
+          <h1 className='mb-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl'>
             Go Green!
           </h1>
-          <p className='text-white my-4 text-xl max-w-2xl'>
+          <p className='max-w-2xl my-4 text-base text-white sm:text-lg md:text-xl'>
             Betreed de inspirerende wereld van 2B Green en geef jouw hart een
             sprongetje van vreugde. Wij geloven in de kracht van duurzame
             alternatieven en samen streven we naar een groenere wereld.
           </p>
-          <div className='flex flex-col sm:flex-row justify-center gap-4 mt-4'>
+          <div className='flex flex-col justify-center gap-4 mt-4 sm:flex-row'>
             <a
-              className='bg-white w-full sm:w-auto px-6 py-2 font-bold rounded-2xl text-primary hover:bg-primary hover:text-secondary transition duration-300'
+              className='w-full px-4 py-2 font-bold transition duration-300 bg-white sm:w-auto rounded-2xl text-primary hover:bg-primary hover:text-secondary'
               href='#'
             >
               Meer weten?
             </a>
             <a
-              className='bg-secondary w-full sm:w-auto px-6 py-2 font-bold rounded-2xl text-primary hover:bg-primary hover:text-secondary transition duration-300'
+              className='w-full px-4 py-2 font-bold transition duration-300 bg-secondary sm:w-auto rounded-2xl text-primary hover:bg-primary hover:text-secondary'
               href='#shop'
             >
               Producten
@@ -114,22 +105,12 @@ const WelcomeSection = ({ handleScrollDown }) => (
         </div>
         <button
           onClick={handleScrollDown}
-          className='w-14 h-14 font-bold rounded-full text-white hover:bg-primary hover:text-secondary mt-8 transition duration-300 ease-in-out transform hover:scale-110'
+          className='w-12 h-12 mt-8 font-bold text-white transition duration-300 ease-in-out transform rounded-full hover:bg-primary hover:text-secondary hover:scale-110'
         >
           <ArrowDownCircleIcon className='w-full h-full' />
         </button>
       </div>
     </SectionLayout>
-    <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-40'>
-      <iframe
-        className='vimeo-video'
-        src='https://player.vimeo.com/video/948337032?h=227dde5589&autoplay=1&loop=1&muted=1&background=1'
-        style={{ border: 'none' }}
-        allow='autoplay'
-        allowFullScreen
-        title='vimeo-player'
-      ></iframe>
-    </div>
   </div>
 );
 

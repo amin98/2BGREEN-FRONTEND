@@ -2,9 +2,12 @@ import { useState } from 'react';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import Register from './pages/RegisterPage';
-import ProductPage from './pages/ProductPage';
+import ProductCategoriesPage from './pages/ProductCategoriesPage';
 import LoginPage from './pages/LoginPage';
 import ComparisonPage from './pages/ComparisonPage';
+import ChargingProductsPage from './pages/products/ChargingProductsPage';
+import GreenRoofProductsPage from './pages/products/GreenRoofProductsPage';
+import SolarProductsPage from './pages/products/SolarProductsPage';
 import './App.css';
 
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
@@ -22,7 +25,10 @@ function App() {
               <Route path='/login' element={<LoginPage />} />
               <Route path='/register' element={<Register />} />
               <Route path='/comparison' element={<ComparisonPage />} />
-              <Route path='/products' element={<ProductPage />} />
+              <Route path='/laden' element={<ChargingProductsPage />} />
+              <Route path='/products' element={<ProductCategoriesPage />} />
+              <Route path='/groendaken' element={<GreenRoofProductsPage />} />
+              <Route path='/zonnepanelen' element={<SolarProductsPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

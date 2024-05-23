@@ -86,3 +86,10 @@ body {
   width: 177.78vh; /* 16 / 9 * 100 = 177.78 */
 }
 
+:root {
+  --vh: 100vh;
+}
+
+.full-height {
+  height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
+}

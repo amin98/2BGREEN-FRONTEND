@@ -2,15 +2,13 @@ import { Link } from 'react-router-dom';
 import { BookmarkIcon, PlusIcon } from '@heroicons/react/24/solid';
 import { XCircleIcon } from '@heroicons/react/24/outline';
 import Checkbox from '../misc/Checkbox';
-import productData from '../../product.json'; // Adjust the path according to your project structure
-import greenRoofImage from '../../images/greenroof.png'; // Import the image
 
 function ProductItem({ product, onCheck, isComparisonPage }) {
   return (
-    <div className='border p-2  shadow-md rounded-md min-w-36 max-w-80'>
-      <div className='relative flex h-full flex-col justify-between gap-2'>
+    <div className='p-2 border rounded-xl min-w-36 max-w-80'>
+      <div className='relative flex flex-col justify-between h-full gap-2'>
         {isComparisonPage && (
-          <button className=' absolute top-0 z-10  right-0'>
+          <button className='absolute top-0 right-0 z-10 '>
             <XCircleIcon className='text-gray-500 size-9' />
           </button>
         )}
@@ -40,11 +38,12 @@ function ProductItem({ product, onCheck, isComparisonPage }) {
                 !isComparisonPage ? 'hidden' : ''
               } text-primary text-xl`}
             >
-              € {product.price}
+              {/* for the slider price filter this needs to be considered */}€
+              {product.price}
             </p>
 
-            <button className='relative group bg-primary hover:bg-secondary p-2 rounded-md size-10'>
-              <PlusIcon className='text-white group-hover:text-primary' />
+            <button className='relative p-2 bg-white text-primary rounded-xl group hover:bg-secondary size-10'>
+              <PlusIcon className='text-primary group-hover:text-primary' />
             </button>
           </div>
         </div>
@@ -58,14 +57,14 @@ function ProductItem({ product, onCheck, isComparisonPage }) {
     //       {/* Container for image and X button */}
     //       {isComparisonPage && (
     //         <button className='absolute top-0 right-0 z-10'>
-    //           <XCircleIcon className='text-gray-500 h-6 w-6' />
+    //           <XCircleIcon className='w-6 h-6 text-gray-500' />
     //         </button>
     //       )}
     //       <Link to='' className='flex justify-center'>
     //         <img
     //           src={product.image}
     //           alt={product.title}
-    //           className='size-32 object-contain'
+    //           className='object-contain size-32'
     //         />
     //       </Link>
     //     </div>
@@ -73,13 +72,13 @@ function ProductItem({ product, onCheck, isComparisonPage }) {
     //       <h1 className='text-xl font-semibold text-lime-600'>
     //         {product.title}
     //       </h1>
-    //       <p className='line-clamp-2 text-gray-700'>{product.description}</p>
+    //       <p className='text-gray-700 line-clamp-2'>{product.description}</p>
     //     </div>
 
     //     {/* Row 2 */}
-    //     <div className='col-span-2 grid grid-cols-3 gap-4 items-center'>
+    //     <div className='grid items-center grid-cols-3 col-span-2 gap-4'>
     //       {isComparisonPage ? (
-    //         <p className='text-xl text-gray-700 text-center'>
+    //         <p className='text-xl text-center text-gray-700'>
     //           €{product.price}
     //         </p>
     //       ) : (
@@ -88,7 +87,7 @@ function ProductItem({ product, onCheck, isComparisonPage }) {
     //             type='checkbox'
     //             checked={product.checked}
     //             onChange={() => onCheck(product)}
-    //             className='h-5 w-5 text-green-500'
+    //             className='w-5 h-5 text-green-500'
     //           />
     //           <span className='ml-2 text-gray-700'>Vergelijk</span>
     //         </div>
@@ -101,8 +100,8 @@ function ProductItem({ product, onCheck, isComparisonPage }) {
     //         {isComparisonPage && (
     //           <p className='text-xl text-gray-700'>€{product.price}</p>
     //         )}
-    //         <button className='bg-lime-600 hover:bg-lime-700 text-white py-2 px-4 rounded-md flex items-center'>
-    //           <PlusIcon className='h-5 w-5' />
+    //         <button className='flex items-center px-4 py-2 text-white rounded-md bg-lime-600 hover:bg-lime-700'>
+    //           <PlusIcon className='w-5 h-5' />
     //         </button>
     //       </div>
     //     </div>

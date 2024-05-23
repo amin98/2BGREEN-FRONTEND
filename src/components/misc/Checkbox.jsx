@@ -10,19 +10,19 @@ function Checkbox({ product, onCheck }) {
     console.log(product, checked);
   };
   return (
-    <label className='flex border bg-primary p-2 rounded-md items-center gap-2 relative group cursor-pointer transition-all duration-50 hover:scale-105'>
+    <label className='relative flex items-center gap-2 p-2 transition-all bg-transparent rounded-md cursor-pointer group duration-50 hover:scale-105'>
       <input
         type='checkbox'
-        className='group-hover:cursor-pointer appearance-none bg-white h-6 w-6 border border-gray-200 rounded-sm checked:bg-secondary checked:border-transparent focus:outline-none transition-colors duration-100'
+        className='w-6 h-6 transition-colors duration-100 bg-white border border-gray-300 rounded-md appearance-none group-hover:cursor-pointer checked:bg-secondary checked:border-transparent focus:outline-none'
         checked={checked}
         onChange={handleChange}
       />
       {checked && (
-        <span className='absolute left-3 flex items-center justify-center text-primary transition-colors duration-100'>
+        <span className='absolute flex items-center justify-center transition-colors duration-100 bg-transparent left-3 text-primary'>
           <CheckIcon className='size-4' />
         </span>
       )}
-      <span className='text-white dark:text-green font-normal transition-colors duration-50'>
+      <span className='font-normal transition-colors text-primary dark:text-green duration-50'>
         Vergelijken
       </span>
     </label>
