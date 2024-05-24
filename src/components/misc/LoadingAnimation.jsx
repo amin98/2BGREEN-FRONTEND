@@ -13,7 +13,7 @@ function LoadingAnimation() {
   }, []);
 
   return (
-    <div className='flex w-full mt-72 items-center justify-center'>
+    <div className='flex w-full mt-[40px] items-center justify-center'>
       {imageUrls.map((url, index) => (
         <img
           key={index}

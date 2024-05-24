@@ -4,12 +4,17 @@ import { useNavigate } from 'react-router-dom';
 import ProductItem from '../../components/products/ProductItem';
 import FilterCheckbox from '../../components/misc/FilterCheckbox';
 import LoadingAnimation from '../../components/misc/LoadingAnimation';
+import PriceFilterSlider from '../../components/misc/PriceFilterSlider';
 
 const ChargingProductsPage = () => {
   const [products, setProducts] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [filters, setFilters] = useState({ category: [], appel: [] });
+  const [filters, setFilters] = useState({
+    category: [],
+    appel: [],
+    price: [0, 1000],
+  });
 
   const itemsPerPage = 10;
   const navigate = useNavigate();
@@ -40,13 +45,19 @@ const ChargingProductsPage = () => {
     });
   };
 
+  const handlePriceChange = priceRange => {
+    setFilters(prevFilters => ({ ...prevFilters, price: priceRange }));
+  };
+
   const filteredProducts = products.filter(product => {
     const categoryMatch =
       filters.category.length === 0 ||
       filters.category.includes(product.category);
     const appelMatch =
       filters.appel.length === 0 || filters.appel.includes(product.appel);
-    return categoryMatch && appelMatch;
+    const priceMatch =
+      product.price >= filters.price[0] && product.price <= filters.price[1];
+    return categoryMatch && appelMatch && priceMatch;
   });
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -60,24 +71,28 @@ const ChargingProductsPage = () => {
     return <LoadingAnimation />;
   }
 
+  const minPrice = Math.min(...products.map(p => p.price));
+  const maxPrice = Math.max(...products.map(p => p.price));
+
   return (
     <>
       {selectedItems.length > 0 && (
         <button
           onClick={() => navigate('/comparison')}
-          className={`fixed right-10 bg-primary p-3 text-lg border-b-2 border-l-2 border-r-2 z-10 border-secondary rounded-b-xl text-white ${
+          className={`fixed right-10  p-3 text-lg border-b-2 border-l-2 border-r-2 z-10 border-secondary bg-white rounded-b-xl text-primary ${
             selectedItems.length > 0 ? 'pop' : ''
           }`}
         >
           Selected items: {selectedItems.length}
         </button>
       )}
-      <div className='flex flex-col justify-center '>
+      <div className='flex flex-col justify-start '>
         <h1 className='flex justify-start mt-5 text-3xl font-semibold text-primary'>
           Laadpunten & Laadkabels
         </h1>
         <div className='flex'>
-          <div className='flex-col hidden gap-5 py-3 pl-3 mt-5 border rounded-md shadow-sm md:flex w-52'>
+          {/* Filter bar */}
+          <div className='flex-col hidden w-2/12 gap-5 px-3 py-3 mt-5 bg-white border rounded-md shadow-sm md:flex'>
             <div>
               <h2 className='text-lg font-bold text-primary'>Categorie</h2>
               <ul className='flex flex-col gap-1 text-primary'>
@@ -136,6 +151,12 @@ const ChargingProductsPage = () => {
                 </li>
               </ul>
             </div>
+            <PriceFilterSlider
+              min={minPrice}
+              max={maxPrice}
+              value={filters.price}
+              onChange={handlePriceChange}
+            />
           </div>
           <div className='flex flex-wrap justify-center w-full h-full md:justify-start'>
             <div className='grid grid-cols-1 gap-6 mt-5 md:mx-5 lg:mx-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3'>
@@ -147,23 +168,6 @@ const ChargingProductsPage = () => {
                 />
               ))}
             </div>
-            {/* <div className='relative bottom-0 flex justify-center mt-5 ml-5'>
-              {Array(Math.ceil(filteredProducts.length / itemsPerPage))
-                .fill()
-                .map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentPage(index + 1)}
-                    className={`mx-1 px-2 rounded-sm ${
-                      currentPage === index + 1
-                        ? 'bg-primary text-white'
-                        : 'bg-white text-primary'
-                    }`}
-                  >
-                    {index + 1}
-                  </button>
-                ))}
-            </div> */}
           </div>
         </div>
       </div>

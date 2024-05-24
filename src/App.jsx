@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import Register from './pages/RegisterPage';
@@ -9,9 +8,7 @@ import ChargingProductsPage from './pages/products/ChargingProductsPage';
 import GreenRoofProductsPage from './pages/products/GreenRoofProductsPage';
 import SolarProductsPage from './pages/products/SolarProductsPage';
 import './App.css';
-
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-
 import UserStatusContextProvider from './components/contexts/UserStatus';
 
 function App() {

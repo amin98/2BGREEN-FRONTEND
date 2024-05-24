@@ -1,0 +1,26 @@
+/* PriceFilterSlider.css */
+
+/* Style the slider handle */
+.rc-slider-handle {
+  border-color: #cbd338 !important;
+  opacity: 1;
+  background-color: #cbd338 !important;
+}
+
+/* Style the slider handle when it is being dragged */
+.rc-slider-handle-dragging {
+  opacity: 1;
+
+  border-color: #d2d94f !important;
+  box-shadow: 0 0 2px #d2d94f !important;
+}
+
+/* Style the slider track */
+.rc-slider-track {
+  background-color: #d9e13e !important;
+}
+
+/* Style the slider rail */
+.rc-slider-rail {
+  background-color: #e2e2e2 !important;
+}

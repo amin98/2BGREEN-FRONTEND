@@ -22,7 +22,10 @@ function Checkbox({ product, onCheck }) {
           <CheckIcon className='size-4' />
         </span>
       )}
-      <span className='font-normal transition-colors text-primary dark:text-green duration-50'>
+      <span
+        style={{ userSelect: 'none' }}
+        className='font-normal transition-colors text-primary dark:text-green duration-50'
+      >
         Vergelijken
       </span>
     </label>

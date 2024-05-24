@@ -2,6 +2,13 @@ html,
 body {
   height: 100%;
   margin: 0;
+  background-image: url('/background.png');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 nav
@@ -92,4 +99,17 @@ body {
 
 .full-height {
   height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
+}
+
+.rc-slider-rail {
+  background-color: #d3d3d3;
+}
+
+.rc-slider-track {
+  background-color: #0d6efd;
+}
+
+.rc-slider-handle {
+  border-color: #0d6efd;
+  background-color: #0d6efd;
 }

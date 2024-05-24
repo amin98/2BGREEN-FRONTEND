@@ -5,6 +5,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      boxSizing: {
+        DEFAULT: 'border-box',
+      },
       textColor: {
         primary: '#405631',
         secondary: '#D2D94F',

@@ -28,15 +28,15 @@ const categories = [
 
 const ProductCategories = () => {
   return (
-    <div className='container mx-auto my-8'>
+    <div className='mx-[30px] md:mx-[40px] lg:mx-[100px] my-8'>
       <h1 className='mb-8 text-3xl font-semibold text-primary'>
         Kies een categorie
       </h1>
-      <div className='grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+      <div className='flex flex-wrap justify-center gap-8'>
         {categories.map(category => (
           <Link
             key={category.id}
-            className='flex flex-col items-center p-4 border rounded-lg shadow-lg cursor-pointer hover:shadow-xl'
+            className='flex flex-col items-center p-4 border-2  rounded-xl shadow-sm cursor-pointer hover:shadow-xl w-full sm:w-[calc(100%-2rem)] md:w-[calc(50%-2rem)] lg:w-[calc(33.3333%-2rem)]'
             to={category.link}
           >
             <img
