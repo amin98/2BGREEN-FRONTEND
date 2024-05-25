@@ -5,6 +5,7 @@ import ProductItem from '../../components/products/ProductItem';
 import FilterCheckbox from '../../components/misc/FilterCheckbox';
 import LoadingAnimation from '../../components/misc/LoadingAnimation';
 import PriceFilterSlider from '../../components/misc/PriceFilterSlider';
+import SelectedItemsPopup from '../../components/misc/SelectedItemsPopup';
 
 const ChargingProductsPage = () => {
   const [products, setProducts] = useState([]);
@@ -29,6 +30,14 @@ const ChargingProductsPage = () => {
     const newSelectedItems = isChecked
       ? [...selectedItems, product]
       : selectedItems.filter(item => item.id !== product.id);
+    setSelectedItems(newSelectedItems);
+    sessionStorage.setItem('selectedItems', JSON.stringify(newSelectedItems));
+  };
+
+  const removeItem = productId => {
+    const newSelectedItems = selectedItems.filter(
+      item => item.id !== productId
+    );
     setSelectedItems(newSelectedItems);
     sessionStorage.setItem('selectedItems', JSON.stringify(newSelectedItems));
   };
@@ -74,17 +83,18 @@ const ChargingProductsPage = () => {
   const minPrice = Math.min(...products.map(p => p.price));
   const maxPrice = Math.max(...products.map(p => p.price));
 
+  const navigateToComparison = () => {
+    navigate('/comparison');
+  };
+
   return (
     <>
       {selectedItems.length > 0 && (
-        <button
-          onClick={() => navigate('/comparison')}
-          className={`fixed right-10  p-3 text-lg border-b-2 border-l-2 border-r-2 z-10 border-secondary bg-white rounded-b-xl text-primary ${
-            selectedItems.length > 0 ? 'pop' : ''
-          }`}
-        >
-          Selected items: {selectedItems.length}
-        </button>
+        <SelectedItemsPopup
+          selectedItems={selectedItems}
+          removeItem={removeItem}
+          navigateToComparison={navigateToComparison}
+        />
       )}
       <div className='flex flex-col justify-start '>
         <h1 className='flex justify-start mt-5 text-3xl font-semibold text-primary'>
@@ -165,6 +175,7 @@ const ChargingProductsPage = () => {
                   key={product.id}
                   product={product}
                   onCheck={handleCheck}
+                  isChecked={selectedItems.some(item => item.id === product.id)}
                 />
               ))}
             </div>

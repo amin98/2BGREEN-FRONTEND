@@ -28,6 +28,7 @@ export default {
       },
       ringColor: {
         primary: '#8EBF46',
+        secondary: '#D2D94F',
       },
       height: {
         'screen-90': '90vh',

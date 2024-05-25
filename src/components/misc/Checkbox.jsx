@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CheckIcon } from '@heroicons/react/24/solid';
 
-function Checkbox({ product, onCheck }) {
-  const [checked, setChecked] = useState(false);
+function Checkbox({ product, onCheck, isChecked }) {
+  const [checked, setChecked] = useState(isChecked);
+
+  useEffect(() => {
+    setChecked(isChecked);
+  }, [isChecked]);
 
   const handleChange = e => {
     setChecked(e.target.checked);
@@ -22,10 +26,7 @@ function Checkbox({ product, onCheck }) {
           <CheckIcon className='size-4' />
         </span>
       )}
-      <span
-        style={{ userSelect: 'none' }}
-        className='font-normal transition-colors text-primary dark:text-green duration-50'
-      >
+      <span className='font-normal transition-colors select-none text-primary dark:text-green duration-50'>
         Vergelijken
       </span>
     </label>

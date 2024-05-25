@@ -4,13 +4,11 @@ import { XCircleIcon } from '@heroicons/react/24/outline';
 import Checkbox from '../misc/Checkbox';
 import { useState } from 'react';
 
-function ProductItem({ product, onCheck, isComparisonPage }) {
-  const [isChecked, setIsChecked] = useState(false);
+function ProductItem({ product, onCheck, isChecked, isComparisonPage }) {
   const [quantity, setQuantity] = useState(0);
 
   const handleCheck = (product, checkedState) => {
-    setIsChecked(checkedState); 
-    onCheck(product, checkedState); 
+    onCheck(product, checkedState); // Pass on the check status to the parent
   };
 
   const increaseQuantity = () => {
@@ -23,13 +21,13 @@ function ProductItem({ product, onCheck, isComparisonPage }) {
 
   return (
     <div
-      className={`p-2 border box-border bg-white  border-gray-300 rounded-xl lg:max-w-80 xl:max-w-96${
+      className={`p-2 border box-border bg-white border-gray-300 rounded-xl min-w-36 lg:max-w-80 ${
         isChecked ? 'border-2 border-secondary' : ''
       }`}
     >
       <div className='relative flex flex-col justify-between h-full gap-2'>
         {isComparisonPage && (
-          <button className='absolute top-0 right-0 z-10 '>
+          <button className='absolute top-0 right-0 z-10'>
             <XCircleIcon className='text-gray-500 size-9' />
           </button>
         )}
@@ -43,10 +41,14 @@ function ProductItem({ product, onCheck, isComparisonPage }) {
         >
           € {product.price}
         </p>
-        <div className='flex justify-between '>
+        <div className='flex justify-between'>
           {!isComparisonPage && (
             <div>
-              <Checkbox product={product} onCheck={handleCheck} />
+              <Checkbox
+                product={product}
+                onCheck={handleCheck}
+                isChecked={isChecked}
+              />
             </div>
           )}
           <div

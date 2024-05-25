@@ -32,7 +32,7 @@ const ProductCategories = () => {
       <h1 className='mb-8 text-3xl font-semibold text-primary'>
         Kies een categorie
       </h1>
-      <div className='flex flex-wrap justify-center gap-8'>
+      <div className='flex flex-wrap justify-center gap-8 bg-white'>
         {categories.map(category => (
           <Link
             key={category.id}

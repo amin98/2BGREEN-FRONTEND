@@ -1,6 +1,5 @@
 import { useContext, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import WelcomeSection from '../components/sections/WelcomeSection';
 import LadenSection from '../components/sections/LadenSection';
 import GroendakenSection from '../components/sections/GroendakenSection';
@@ -52,9 +51,8 @@ const HomePage = () => {
       </div>
 
       {/* Desktop View */}
-      <div className='hidden lg:block'>
+      <div className='hidden w-full lg:block'>
         <DesktopSections />
-        <div></div>
       </div>
     </>
   );
