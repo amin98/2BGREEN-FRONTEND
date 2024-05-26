@@ -13,15 +13,14 @@ const Navbar = ({ onHeightChange }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const navItems = [
-    { href: '/', label: 'Home' },
-    { href: '/products', label: 'Products' },
+    { href: '/products', label: 'Producten' },
     { href: '/onze-missie', label: 'Onze Missie' },
     { href: '/login', label: 'Login' },
     { href: '/register', label: 'Register' },
   ];
 
   return (
-    <header className='fixed z-50 flex flex-wrap w-full h-16 py-3 text-sm bg-white sm:justify-start sm:flex-nowrap sm:py-0'>
+    <header className='fixed z-50 flex flex-wrap w-full h-16 py-3 text-sm bg-white shadow-custom-bottom sm:justify-start sm:flex-nowrap sm:py-0'>
       <nav
         ref={navRef}
         className='relative max-w-[94rem] w-full mx-auto sm:flex sm:items-center sm:justify-between sm:px-6 '
@@ -35,12 +34,12 @@ const Navbar = ({ onHeightChange }) => {
           >
             <img
               className='block w-auto h-8 lg:hidden'
-              src='2b_green_logo.svg'
+              src='misc/2b_green_logo.svg'
               alt='2B Green'
             />
             <img
               className='hidden w-auto h-10 lg:block'
-              src='2b_green_logo.svg'
+              src='misc/2b_green_logo.svg'
               alt='2B Green'
             />
           </NavLink>
@@ -71,7 +70,7 @@ const Navbar = ({ onHeightChange }) => {
               <NavLink
                 key={item.href}
                 to={item.href}
-                className='py-3 font-medium transition-all duration-500 ps-px sm:px-3 text-primary hover:text-secondary'
+                className='py-3 text-lg font-medium transition-all duration-500 ps-px sm:px-3 text-primary hover:text-secondary'
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

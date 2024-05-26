@@ -51,7 +51,7 @@ const HomePage = () => {
       </div>
 
       {/* Desktop View */}
-      <div className='hidden w-full lg:block'>
+      <div className='flex-col hidden w-full lg:flex'>
         <DesktopSections />
       </div>
     </>

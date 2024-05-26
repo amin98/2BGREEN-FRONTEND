@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function LoadingAnimation() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const imageUrls = ['1.png', '2.png', '3.png'];
+  const imageUrls = ['misc/1.png', 'misc/2.png', 'misc/3.png'];
 
   useEffect(() => {
     const interval = setInterval(() => {
