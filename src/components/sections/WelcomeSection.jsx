@@ -162,7 +162,7 @@ const WelcomeSection = ({ handleScrollDown }) => {
           allowFullScreen
           title='vimeo-player' // Adding a title for accessibility
         ></iframe>
-        <div className='absolute top-0 left-0 w-full h-full opacity-70 bg-lime-950'></div>
+        <div className='absolute top-0 left-0 w-full h-full opacity-70 bg-lime-950 '></div>
       </div>
     </div>
   );

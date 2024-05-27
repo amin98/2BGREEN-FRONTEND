@@ -31,7 +31,10 @@ function ProductItem({ product, onCheck, isChecked, isComparisonPage }) {
             <XCircleIcon className='text-gray-500 size-9' />
           </button>
         )}
-        <Link className='flex justify-center' to=''>
+        <Link
+          className='flex justify-center'
+          to={`/product/${product.category}/${product.id}`}
+        >
           <img className='size-50' src={product.image} alt={product.title} />
         </Link>
         <h1 className='text-xl text-lime-agreen'>{product.title}</h1>

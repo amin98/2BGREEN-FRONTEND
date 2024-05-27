@@ -7,6 +7,8 @@ import ComparisonPage from './pages/ComparisonPage';
 import ChargingProductsPage from './pages/products/ChargingProductsPage';
 import GreenRoofProductsPage from './pages/products/GreenRoofProductsPage';
 import SolarProductsPage from './pages/products/SolarProductsPage';
+import ProductDetailsPage from './pages/products/ProductDetailsPage'; // Import the ProductDetailsPage
+
 import './App.css';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import UserStatusContextProvider from './components/contexts/UserStatus';
@@ -26,6 +28,11 @@ function App() {
               <Route path='/products' element={<ProductCategoriesPage />} />
               <Route path='/groendaken' element={<GreenRoofProductsPage />} />
               <Route path='/zonnepanelen' element={<SolarProductsPage />} />
+              <Route
+                path='/product/:category/:id'
+                element={<ProductDetailsPage />}
+              />{' '}
+              {/* Add the new route */}
             </Route>
           </Routes>
         </BrowserRouter>

@@ -4,7 +4,7 @@
     "title": "Besen BS20 App control - Type 2 kabel - 3 fasen 32A",
     "description": "Op zoek naar een EV-lader die veilig, efficiënt en betrouwbaar is? Kijk dan niet verder dan het Besen BS20 laadstation! Met zijn geavanceerde technologie en slanke ontwerp voor wandmontage is deze lader perfect voor zowel thuis als zakelijk gebruik.",
     "price": 129.95,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden1.png"
   },
   {
@@ -12,7 +12,7 @@
     "title": "Honors Type 2 draagbare oplader met Rode CEE - 16A 3 fasen stekker",
     "description": "Deze 16A draagbare oplader is uw ideale reisgenoot. Met instelbare stroomsterkte tussen 6 en 16 ampère, vertraagd opladen, OLED-display, LED-laadindicatoren en aanraaktoets voor functie-instellingen hebt u alle controle binnen handbereik.",
     "price": 349.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden2.png"
   },
   {
@@ -20,7 +20,7 @@
     "title": "Ratio io6 - Type 2 kabel - 3 fasen 32A",
     "description": "Ben je op zoek naar de ultieme laadoplossing voor je elektrische voertuig? Zoek niet verder! De Ratio io6 EV Charger biedt de krachtige prestaties en slimme technologieën die je nodig hebt voor zowel zakelijke als persoonlijke laadsessies. Met een maximaal",
     "price": 249.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden3.png"
   },
   {
@@ -28,7 +28,7 @@
     "title": "Ratio io6 - Socket - 3 fasen 32A",
     "description": "Ben je op zoek naar de ultieme laadoplossing voor je elektrische voertuig? Zoek niet verder! De Ratio io6 EV Charger biedt de krachtige prestaties en slimme technologieën die je nodig hebt voor zowel zakelijke als persoonlijke laadsessies.",
     "price": 629.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden4.png"
   },
   {
@@ -36,7 +36,7 @@
     "title": "Honors CCS1 car to CCS2 charger adapter",
     "description": "CCS1 car to CCS2 charger adapter.",
     "price": 239.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden5.png"
   },
   {
@@ -44,7 +44,7 @@
     "title": "Besen BS20 App control - Type 2 kabel - 3 fasen 32A",
     "description": "Op zoek naar een EV-lader die veilig, efficiënt en betrouwbaar is? Kijk dan niet verder dan het Besen BS20 laadstation! Met zijn geavanceerde technologie en slanke ontwerp voor wandmontage is deze lader perfect voor zowel thuis als zakelijk gebruik.",
     "price": 179.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden6.png"
   },
   {
@@ -52,7 +52,7 @@
     "title": "Levendige GroenRijk Tiles",
     "description": "Ben je op zoek naar de ultieme laadoplossing voor je elektrische voertuig? Zoek niet verder! De Ratio io6 EV Charger biedt de krachtige prestaties en slimme technologieën die je nodig hebt voor zowel zakelijke als persoonlijke laadsessies.",
     "price": 89.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden7.png"
   },
   {
@@ -60,7 +60,7 @@
     "title": "Wallbox Pulsar Plus - Type 2 kabel - 3 fasen 32A - zwart en wit",
     "description": "De Wallbox Pulsar Plus 22 kW is een van onze meest veelzijdige thuisladers met Wi-Fi, Bluetooth en andere slimme functies. Bij auto’s met uiteenlopende laadvermogens is dit een geschikte optie. Het laadvermogen wordt bepaald door de boordlader van de accu",
     "price": 959.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden2.png"
   },
   {
@@ -68,7 +68,7 @@
     "title": "GroenLeven Sedum Panelen",
     "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
     "price": 69.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden4.png"
   },
   {
@@ -76,7 +76,7 @@
     "title": "Ratio io6 - Socket - 3 fasen 32A",
     "description": "Ben je op zoek naar de ultieme laadoplossing voor je elektrische voertuig? Zoek niet verder! De Ratio io6 EV Charger biedt de krachtige prestaties en slimme technologieën die je nodig hebt voor zowel zakelijke als persoonlijke laadsessies.",
     "price": 49.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden1.png"
   },
   {
@@ -84,7 +84,7 @@
     "title": "Wallbox Pulsar Plus - Type 2 kabel - 3 fasen 32A - zwart en wit",
     "description": "Verander uw dak in een levendige oase uw dak in een levendige oase uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
     "price": 79.99,
-    "category": "Laden",
+    "category": "laden",
     "image": "./images/laden/laden6.png"
   }
 ]

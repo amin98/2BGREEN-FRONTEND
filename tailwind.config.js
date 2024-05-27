@@ -9,7 +9,7 @@ export default {
         DEFAULT: 'border-box',
       },
       boxShadow: {
-        'custom-bottom': '0 10px 15px -3px rgba(64, 86, 49, 0.5)', // Adjust the shadow values as needed
+        'custom-bottom': '0 2px 15px -3px rgba(64, 86, 49, 0.5)', // Adjust the shadow values as needed
       },
       textColor: {
         primary: '#405631',

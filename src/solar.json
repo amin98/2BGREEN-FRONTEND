@@ -1,90 +1,90 @@
 [
   {
     "id": 1,
-    "title": "Sedum Lichtgewicht Mix Matten",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 79.95,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof1.png"
+    "title": "SunPower Maxeon 6 ",
+    "description": "Het SunPower Maxeon 6 zonnepaneel is 's werelds eerste zonnepaneel met cellen die koper vervangen door tin, wat resulteert in een hogere efficiëntie en duurzaamheid. Dit paneel biedt een toonaangevende garantie van 40 jaar.",
+    "price": 329.95,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 2,
-    "title": "GroenGloed Dakgras",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 59.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof2.png"
+    "title": "LG NeON H BiFacial ",
+    "description": "Het LG NeON H BiFacial zonnepaneel vangt licht aan beide zijden op, waardoor de energieopbrengst aanzienlijk toeneemt. Dit paneel is ideaal voor platte daken of situaties met veel reflectie.",
+    "price": 299.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 3,
-    "title": "Ecovriendelijke GroenTapijten",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 49.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof8.png"
+    "title": "REC Alpha Pure ",
+    "description": "Het REC Alpha Pure zonnepaneel is een van de krachtigste zonnepanelen op de markt, met een hoog vermogen per vierkante meter. Dit paneel is perfect voor beperkte ruimte.",
+    "price": 279.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 4,
-    "title": "BioFlora Dakbedekkers",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 69.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof4.png"
+    "title": "Panasonic HIT ",
+    "description": "Het Panasonic HIT zonnepaneel combineert monokristallijne en amorfe siliciumcellen voor een uitstekende prestatie bij hoge temperaturen. Dit paneel is ideaal voor warme klimaten.",
+    "price": 259.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 5,
-    "title": "GroenDek Oasis Matten",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 39.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof5.png"
+    "title": "Q Cells Q.PEAK DUO ",
+    "description": "Het Q Cells Q.PEAK DUO zonnepaneel maakt gebruik van halfgesneden cellen en een innovatief bedradingsontwerp voor een hogere efficiëntie en betrouwbaarheid.",
+    "price": 239.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 6,
-    "title": "NatuurZicht GroenDak Folie",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 79.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof1.png"
+    "title": "Trina Solar Vertex S ",
+    "description": "Het Trina Solar Vertex S zonnepaneel is een veelzijdig paneel met een hoge efficiëntie en een uitstekende prijs-kwaliteitverhouding.",
+    "price": 219.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 7,
-    "title": "Levendige GroenRijk Tiles",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 89.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof7.png"
+    "title": "Canadian Solar HiKu ",
+    "description": "Het Canadian Solar HiKu zonnepaneel biedt een hoge efficiëntie en een compact ontwerp, waardoor het geschikt is voor verschillende toepassingen.",
+    "price": 199.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 8,
-    "title": "EverGroen Dakbedekking",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 59.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof8.png"
+    "title": "Jinko Solar Tiger Pro ",
+    "description": "Het Jinko Solar Tiger Pro zonnepaneel is een krachtig en efficiënt paneel met een uitstekende prijs-kwaliteitverhouding.",
+    "price": 179.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 9,
-    "title": "GroenLeven Sedum Panelen",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 69.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof2.png"
+    "title": "JA Solar DeepBlue 3.0 ",
+    "description": "Het JA Solar DeepBlue 3.0 zonnepaneel maakt gebruik van geavanceerde technologieën voor een hoge efficiëntie en betrouwbaarheid.",
+    "price": 159.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 10,
-    "title": "EcoDak Botanische Laag",
-    "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 49.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof4.png"
+    "title": "Longi Solar Hi-MO 5 ",
+    "description": "Het Longi Solar Hi-MO 5 zonnepaneel biedt een hoge efficiëntie en een uitstekende prijs-kwaliteitverhouding.",
+    "price": 139.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   },
   {
     "id": 11,
-    "title": "VivaGroen Groendak Systemen",
-    "description": "Verander uw dak in een levendige oase uw dak in een levendige oase uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
-    "price": 79.99,
-    "category": "Groendaken",
-    "image": "./images/greenroofs/greenroof1.png"
+    "title": "Risen Energy Titan S ",
+    "description": "Het Risen Energy Titan S zonnepaneel is een krachtig en betrouwbaar paneel met een lange levensduur.",
+    "price": 119.99,
+    "category": "zonnepanelen",
+    "image": "./images/solar/solar_panel_item.png"
   }
 ]
