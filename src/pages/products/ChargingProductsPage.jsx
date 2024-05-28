@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import productData from '../../charging.json';
+import productData from '../../apis/mockAPI/charging.json';
 import { useNavigate } from 'react-router-dom';
 import ProductItem from '../../components/products/ProductItem';
 import FilterCheckbox from '../../components/misc/FilterCheckbox';
@@ -101,7 +101,6 @@ const ChargingProductsPage = () => {
           Laadpunten & Laadkabels
         </h1>
         <div className='flex'>
-          {/* Filter bar */}
           <div className='flex-col hidden w-2/12 gap-5 px-3 py-3 mt-5 bg-white border rounded-md shadow-sm md:flex'>
             <div>
               <h2 className='text-lg font-bold text-primary'>Categorie</h2>

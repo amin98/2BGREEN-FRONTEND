@@ -6,12 +6,6 @@ const get = async (url, config) => {
 };
 
 const post = async (url, data, config) => {
-  // Create a default configuration if none is provided
-  config = config || {};
-  config.headers = config.headers || {}; // Initialize headers if they don't exist
-
-  config.headers['Content-Type'] = 'application/json'; // Set the header
-
   return await handleRequest(RequestType.Post, url, data, config);
 };
 

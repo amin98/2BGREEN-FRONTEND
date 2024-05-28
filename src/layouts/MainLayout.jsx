@@ -46,7 +46,7 @@ const MainLayout = () => {
           <Outlet />
         </div>
         <div
-          className={`fixed bottom-10 right-4 flex justify-center items-center  size-12 rounded-full shadow-lg bg-[url('./assets/icons/icon.png')] bg-cover bg-center transition-opacity duration-200 hover:cursor-pointer ease-in-out ${
+          className={`fixed bottom-16 right-5 flex justify-center items-center  size-12 rounded-full shadow-lg bg-[url('./assets/icons/icon.png')] bg-cover bg-center transition-opacity duration-200 hover:cursor-pointer ease-in-out ${
             showScrollToTop ? 'opacity-100' : 'opacity-0'
           }`}
           onClick={scrollToTop}

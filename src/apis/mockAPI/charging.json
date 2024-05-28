@@ -5,7 +5,7 @@
     "description": "Op zoek naar een EV-lader die veilig, efficiënt en betrouwbaar is? Kijk dan niet verder dan het Besen BS20 laadstation! Met zijn geavanceerde technologie en slanke ontwerp voor wandmontage is deze lader perfect voor zowel thuis als zakelijk gebruik.",
     "price": 129.95,
     "category": "laden",
-    "image": "./images/laden/laden1.png"
+    "image": "/images/laden/laden1.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "Deze 16A draagbare oplader is uw ideale reisgenoot. Met instelbare stroomsterkte tussen 6 en 16 ampère, vertraagd opladen, OLED-display, LED-laadindicatoren en aanraaktoets voor functie-instellingen hebt u alle controle binnen handbereik.",
     "price": 349.99,
     "category": "laden",
-    "image": "./images/laden/laden2.png"
+    "image": "/images/laden/laden2.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "description": "Ben je op zoek naar de ultieme laadoplossing voor je elektrische voertuig? Zoek niet verder! De Ratio io6 EV Charger biedt de krachtige prestaties en slimme technologieën die je nodig hebt voor zowel zakelijke als persoonlijke laadsessies. Met een maximaal",
     "price": 249.99,
     "category": "laden",
-    "image": "./images/laden/laden3.png"
+    "image": "/images/laden/laden3.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "description": "Ben je op zoek naar de ultieme laadoplossing voor je elektrische voertuig? Zoek niet verder! De Ratio io6 EV Charger biedt de krachtige prestaties en slimme technologieën die je nodig hebt voor zowel zakelijke als persoonlijke laadsessies.",
     "price": 629.99,
     "category": "laden",
-    "image": "./images/laden/laden4.png"
+    "image": "/images/laden/laden4.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "CCS1 car to CCS2 charger adapter.",
     "price": 239.99,
     "category": "laden",
-    "image": "./images/laden/laden5.png"
+    "image": "/images/laden/laden5.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "description": "Op zoek naar een EV-lader die veilig, efficiënt en betrouwbaar is? Kijk dan niet verder dan het Besen BS20 laadstation! Met zijn geavanceerde technologie en slanke ontwerp voor wandmontage is deze lader perfect voor zowel thuis als zakelijk gebruik.",
     "price": 179.99,
     "category": "laden",
-    "image": "./images/laden/laden6.png"
+    "image": "/images/laden/laden6.png"
   },
   {
     "id": 7,
@@ -53,15 +53,15 @@
     "description": "Ben je op zoek naar de ultieme laadoplossing voor je elektrische voertuig? Zoek niet verder! De Ratio io6 EV Charger biedt de krachtige prestaties en slimme technologieën die je nodig hebt voor zowel zakelijke als persoonlijke laadsessies.",
     "price": 89.99,
     "category": "laden",
-    "image": "./images/laden/laden7.png"
+    "image": "/images/laden/laden7.png"
   },
   {
     "id": 8,
     "title": "Wallbox Pulsar Plus - Type 2 kabel - 3 fasen 32A - zwart en wit",
-    "description": "De Wallbox Pulsar Plus 22 kW is een van onze meest veelzijdige thuisladers met Wi-Fi, Bluetooth en andere slimme functies. Bij auto’s met uiteenlopende laadvermogens is dit een geschikte optie. Het laadvermogen wordt bepaald door de boordlader van de accu",
+    "description": "De Wallbox Pulsar Plus 22 kW is een van onze meest veelzijdige thuisladers met Wi-Fi, Bluetooth en andere slimme functies. Bij auto’s met uiteenlopende laadvermogens is dit een geschikte optie. Het laadvermogen wordt bepaald door de boordlader van de accu.",
     "price": 959.99,
     "category": "laden",
-    "image": "./images/laden/laden2.png"
+    "image": "/images/laden/laden2.png"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "description": "Verander uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
     "price": 69.99,
     "category": "laden",
-    "image": "./images/laden/laden4.png"
+    "image": "/images/laden/laden4.png"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "description": "Ben je op zoek naar de ultieme laadoplossing voor je elektrische voertuig? Zoek niet verder! De Ratio io6 EV Charger biedt de krachtige prestaties en slimme technologieën die je nodig hebt voor zowel zakelijke als persoonlijke laadsessies.",
     "price": 49.99,
     "category": "laden",
-    "image": "./images/laden/laden1.png"
+    "image": "/images/laden/laden1.png"
   },
   {
     "id": 11,
@@ -85,6 +85,6 @@
     "description": "Verander uw dak in een levendige oase uw dak in een levendige oase uw dak in een levendige oase met ons EcoRoof Pro modulaire groendaksysteem. Gemaakt van gerecyclede materialen, is dit lichtgewicht en eenvoudig te installeren systeem niet alleen een esthetische verbetering voor uw gebouw, maar verbetert het ook de isolatie, vermindert het regenwaterafvoer en bevordert het de biodiversiteit. Creëer een duurzame en milieuvriendelijke omgeving terwijl u geniet van de voordelen van een koeler, gezonder gebouw.",
     "price": 79.99,
     "category": "laden",
-    "image": "./images/laden/laden6.png"
+    "image": "/images/laden/laden6.png"
   }
 ]

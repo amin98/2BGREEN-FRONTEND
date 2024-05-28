@@ -1,16 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
-import Register from './pages/RegisterPage';
+import RegisterPage from './components/auth/RegisterPage';
 import ProductCategoriesPage from './pages/ProductCategoriesPage';
 import LoginPage from './pages/LoginPage';
 import ComparisonPage from './pages/ComparisonPage';
 import ChargingProductsPage from './pages/products/ChargingProductsPage';
 import GreenRoofProductsPage from './pages/products/GreenRoofProductsPage';
 import SolarProductsPage from './pages/products/SolarProductsPage';
-import ProductDetailsPage from './pages/products/ProductDetailsPage'; // Import the ProductDetailsPage
+import ProductDetailsPage from './pages/ProductDetailsPage';
+import CreateProduct from './components/products/CreateProduct';
 
 import './App.css';
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import UserStatusContextProvider from './components/contexts/UserStatus';
 
 function App() {
@@ -22,17 +23,17 @@ function App() {
             <Route path='/' element={<MainLayout />}>
               <Route index element={<HomePage />} />
               <Route path='/login' element={<LoginPage />} />
-              <Route path='/register' element={<Register />} />
+              <Route path='/register' element={<RegisterPage />} />
               <Route path='/comparison' element={<ComparisonPage />} />
               <Route path='/laden' element={<ChargingProductsPage />} />
               <Route path='/products' element={<ProductCategoriesPage />} />
               <Route path='/groendaken' element={<GreenRoofProductsPage />} />
               <Route path='/zonnepanelen' element={<SolarProductsPage />} />
+              <Route path='/create-product' element={<CreateProduct />} />
               <Route
                 path='/product/:category/:id'
                 element={<ProductDetailsPage />}
-              />{' '}
-              {/* Add the new route */}
+              />
             </Route>
           </Routes>
         </BrowserRouter>

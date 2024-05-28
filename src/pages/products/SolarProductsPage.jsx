@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import productData from '../../solar.json';
+import productData from '../../apis/mockAPI/solar.json';
 import { useNavigate } from 'react-router-dom';
 import ProductItem from '../../components/products/ProductItem';
 import FilterCheckbox from '../../components/misc/FilterCheckbox';

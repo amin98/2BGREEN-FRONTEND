@@ -15,6 +15,7 @@ const Navbar = ({ onHeightChange }) => {
   const navItems = [
     { href: '/products', label: 'Producten' },
     { href: '/onze-missie', label: 'Onze Missie' },
+    { href: '/create-product', label: 'Add Product' },
     { href: '/login', label: 'Login' },
     { href: '/register', label: 'Register' },
   ];
@@ -76,7 +77,7 @@ const Navbar = ({ onHeightChange }) => {
                 {item.label}
               </NavLink>
             ))}
-            <a
+            {/* <a
               className='flex items-center py-2 font-medium gap-x-2 text-primary hover:text-secondary sm:border-s sm:border-secondary md:py-0 sm:my-6 sm:ps-6'
               href='#'
             >
@@ -96,7 +97,7 @@ const Navbar = ({ onHeightChange }) => {
                 <circle cx='12' cy='7' r='4' />
               </svg>
               Log in
-            </a>
+            </a> */}
           </div>
         </div>
       </nav>

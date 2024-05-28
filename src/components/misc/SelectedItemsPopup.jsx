@@ -52,20 +52,23 @@ const SelectedItemsPopup = ({
       </div>
       {isExpanded && (
         <div className='mt-4'>
-          <ul>
+          <ul className='flex flex-col gap-5'>
             {selectedItems.map(item => (
               <li
                 key={item.id}
                 className='flex items-center justify-between mb-2'
               >
-                <Link to={`/product/${item.id}`} className='flex items-center'>
+                <Link
+                  to={`/product/${item.category}/${item.id}`}
+                  className='flex items-center'
+                >
                   <img
                     src={item.image}
                     alt={item.title}
                     className='w-12 h-12 mr-2 rounded'
                   />
-                  <div>
-                    <h3 className='text-sm font-bold text-primary'>
+                  <div className='flex flex-col w-[175px]'>
+                    <h3 className='text-sm font-bold truncate text-primary'>
                       {item.title}
                     </h3>
                     <p className='text-sm text-gray-700'>€{item.price}</p>

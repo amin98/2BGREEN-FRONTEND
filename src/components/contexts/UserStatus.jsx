@@ -3,7 +3,7 @@ import { useEffect, useReducer, createContext } from 'react';
 const initialState = {
   isAuthenticated: false,
   token: JSON.parse(localStorage.getItem('token')),
-  name: null, // Add name
+  name: null,
   error: null,
 };
 
@@ -15,7 +15,7 @@ const userReducer = (state, action) => {
         isAuthenticated: true,
         token: action.token,
         name: action.name,
-        error: null, // Clear any old errors
+        error: null,
       };
     case 'logout':
       return {
@@ -33,24 +33,19 @@ const userReducer = (state, action) => {
       return state;
   }
 };
+
 export const userStatusContext = createContext();
 
 const UserStatusContextProvider = ({ children }) => {
   const [user, dispatch] = useReducer(userReducer, initialState);
 
   useEffect(() => {
-    if (user.token !== null && user.token !== undefined) {
+    if (user.token) {
       localStorage.setItem('token', JSON.stringify(user.token));
     } else {
       localStorage.removeItem('token');
     }
   }, [user.token]);
-
-  useEffect(() => {
-    if (user.token === undefined || user.token === null) {
-      return;
-    }
-  }, []);
 
   return (
     <userStatusContext.Provider value={{ user, dispatch }}>

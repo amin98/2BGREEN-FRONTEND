@@ -4,11 +4,10 @@ import { useContext } from 'react';
 import Login from '../components/auth/Login';
 
 import AuthenticationAPI from '../apis/AuthenticationAPI';
-import { userStatusContext } from '../components/contexts/UserStatus';
-import RequestHandler from '../apis/RequestHandler';
+// import { UserStatusContext } from '.././components/contexts/UserStatus';
 
 const LoginPage = () => {
-  const { dispatch } = useContext(userStatusContext);
+  const { dispatch } = useContext(UserStatusContext);
   const navigate = useNavigate();
 
   const handleLogin = async (email, password) => {

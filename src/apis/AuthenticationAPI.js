@@ -1,13 +1,14 @@
 import RequestHandler from './RequestHandler';
 
-const componentURL = '/auth';
+const componentURL = '/User';
 
 const AuthenticationAPI = {
   login: async (email, password) => {
     try {
-      const res = await RequestHandler.post(componentURL + '/login', {
+      const res = await RequestHandler.post(`${componentURL}/Login`, {
         email: email,
         password: password,
+        appName: '2B-GreenAPI',
       });
 
       return res;
@@ -16,11 +17,12 @@ const AuthenticationAPI = {
     }
   },
 
-  register: async (firstName, lastName, email, password) => {
+  register: async (name, prefix, surname, email, password) => {
     try {
-      const res = await RequestHandler.post('/users/register', {
-        firstName: firstName,
-        lastName: lastName,
+      const res = await RequestHandler.post(`${componentURL}/Register`, {
+        name: name,
+        prefix: prefix,
+        surname: surname,
         email: email,
         password: password,
       });
@@ -31,4 +33,5 @@ const AuthenticationAPI = {
     }
   },
 };
+
 export default AuthenticationAPI;

@@ -5,7 +5,7 @@
     "description": "Het SunPower Maxeon 6 zonnepaneel is 's werelds eerste zonnepaneel met cellen die koper vervangen door tin, wat resulteert in een hogere efficiëntie en duurzaamheid. Dit paneel biedt een toonaangevende garantie van 40 jaar.",
     "price": 329.95,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "Het LG NeON H BiFacial zonnepaneel vangt licht aan beide zijden op, waardoor de energieopbrengst aanzienlijk toeneemt. Dit paneel is ideaal voor platte daken of situaties met veel reflectie.",
     "price": 299.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "description": "Het REC Alpha Pure zonnepaneel is een van de krachtigste zonnepanelen op de markt, met een hoog vermogen per vierkante meter. Dit paneel is perfect voor beperkte ruimte.",
     "price": 279.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "description": "Het Panasonic HIT zonnepaneel combineert monokristallijne en amorfe siliciumcellen voor een uitstekende prestatie bij hoge temperaturen. Dit paneel is ideaal voor warme klimaten.",
     "price": 259.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "Het Q Cells Q.PEAK DUO zonnepaneel maakt gebruik van halfgesneden cellen en een innovatief bedradingsontwerp voor een hogere efficiëntie en betrouwbaarheid.",
     "price": 239.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "description": "Het Trina Solar Vertex S zonnepaneel is een veelzijdig paneel met een hoge efficiëntie en een uitstekende prijs-kwaliteitverhouding.",
     "price": 219.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "description": "Het Canadian Solar HiKu zonnepaneel biedt een hoge efficiëntie en een compact ontwerp, waardoor het geschikt is voor verschillende toepassingen.",
     "price": 199.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "description": "Het Jinko Solar Tiger Pro zonnepaneel is een krachtig en efficiënt paneel met een uitstekende prijs-kwaliteitverhouding.",
     "price": 179.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "description": "Het JA Solar DeepBlue 3.0 zonnepaneel maakt gebruik van geavanceerde technologieën voor een hoge efficiëntie en betrouwbaarheid.",
     "price": 159.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "description": "Het Longi Solar Hi-MO 5 zonnepaneel biedt een hoge efficiëntie en een uitstekende prijs-kwaliteitverhouding.",
     "price": 139.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   },
   {
     "id": 11,
@@ -85,6 +85,6 @@
     "description": "Het Risen Energy Titan S zonnepaneel is een krachtig en betrouwbaar paneel met een lange levensduur.",
     "price": 119.99,
     "category": "zonnepanelen",
-    "image": "./images/solar/solar_panel_item.png"
+    "image": "/images/solar/solar_panel_item.png"
   }
 ]

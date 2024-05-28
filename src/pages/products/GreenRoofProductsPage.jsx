@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import productData from '../../greenroof.json';
+import productData from '../../apis/mockAPI/greenroof.json';
 import { useNavigate } from 'react-router-dom';
 import ProductItem from '../../components/products/ProductItem';
 import FilterCheckbox from '../../components/misc/FilterCheckbox';
