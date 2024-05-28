@@ -7,7 +7,7 @@ import AuthenticationAPI from '../apis/AuthenticationAPI';
 // import { UserStatusContext } from '.././components/contexts/UserStatus';
 
 const LoginPage = () => {
-  const { dispatch } = useContext(UserStatusContext);
+  // const { dispatch } = useContext(UserStatusContext);
   const navigate = useNavigate();
 
   const handleLogin = async (email, password) => {

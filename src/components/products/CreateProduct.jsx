@@ -1,7 +1,6 @@
-import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import ProductApi from '../../apis/ProductAPI';
-import { userStatusContext } from '../contexts/UserStatus';
 
 const InputField = ({
   label,
@@ -77,25 +76,25 @@ const SelectField = ({ label, id, value, onChange, options }) => (
 );
 
 const CreateProduct = () => {
-  const { user } = useContext(userStatusContext);
   const initialProduct = {
     sku: '',
     name: '',
     description: '',
-    price: '',
-    quantity: '',
+    price: 0,
+    quantity: 0,
     category: '',
     productImage: '',
     length: 0,
     width: 0,
     height: 0,
-    availability: 'true',
+    availability: true,
     warranty: '',
   };
 
   const [product, setProduct] = useState(initialProduct);
   const [submitted, setSubmitted] = useState(false);
   const [fileName, setFileName] = useState('');
+  const navigate = useNavigate();
 
   const handleInput = event => {
     const { name, value } = event.target;
@@ -107,14 +106,16 @@ const CreateProduct = () => {
     setFileName(file ? file.name : '');
   };
 
-  const saveProduct = async e => {
-    e.preventDefault();
+  const saveProduct = async event => {
+    event.preventDefault();
     try {
       const data = { ...product, productImage: fileName };
+      console.log('Product data:', data); // Log the product data to the console
       const response = await ProductApi.addProduct(data);
-      console.log('Product saved:', response);
       if (response.status === 201) {
         setSubmitted(true);
+        console.log('Product saved:', response);
+        navigate('/');
       }
     } catch (error) {
       console.error('Error saving product:', error);
@@ -140,7 +141,7 @@ const CreateProduct = () => {
         </button>
         <Link
           to='/admin-portal'
-          className='inline-flex items-center px-4 py-3 mt-3 text-lg font-semibold text-center text-white bg-red-600 border border-transparent rounded-lg gap-x-2 hover:bg-red-700 disabled:opacity-50 disabled:pointer-events-none'
+          className='inline-flex items-center px-4 py-3 mt-3 text-lg font-semibold text-center border rounded-lg border-t-secondary transparent hover:text-secondary hover:bg-primary gap-x-2 disabled:opacity-50 disabled:pointer-events-none'
         >
           Back to admin portal
         </Link>
@@ -149,7 +150,7 @@ const CreateProduct = () => {
   }
 
   return (
-    <div className='lg:mx-[100px] px-4 py-10 w-3/6'>
+    <div className='mx-5 lg:mx-[100px] px-4 py-10 w-5/6'>
       <h1 className='mb-5 text-2xl font-bold text-primary'>
         Product toevoegen
       </h1>
@@ -295,6 +296,7 @@ const CreateProduct = () => {
             placeholder='Enter warranty period'
             required
           />
+
           <div className='flex justify-start mt-5 gap-x-2'>
             <button
               type='submit'

@@ -10,7 +10,7 @@ import GreenRoofProductsPage from './pages/products/GreenRoofProductsPage';
 import SolarProductsPage from './pages/products/SolarProductsPage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import CreateProduct from './components/products/CreateProduct';
-
+import TestProductPage from './pages/TestProductPage';
 import './App.css';
 import UserStatusContextProvider from './components/contexts/UserStatus';
 
@@ -30,6 +30,7 @@ function App() {
               <Route path='/groendaken' element={<GreenRoofProductsPage />} />
               <Route path='/zonnepanelen' element={<SolarProductsPage />} />
               <Route path='/create-product' element={<CreateProduct />} />
+              <Route path='/test-product' element={<TestProductPage />} />
               <Route
                 path='/product/:category/:id'
                 element={<ProductDetailsPage />}
